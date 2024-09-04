@@ -3,8 +3,20 @@
 @tailwind utilities;
 
 body {
-    background-color: #000000;
+    background-color: #070707;
     background-image: url(/noise.png);
+}
+
+@layer base {
+    h1 {
+        @apply tab:text-[72px] text-[60px] font-bold leading-[120%];
+    }
+    h6 {
+        @apply font-medium leading-[120%] md:text-[20px] text-[18px];
+    }
+    /* ul > li {
+        @apply mb-2;
+    } */
 }
 
 /* Previous styles */
