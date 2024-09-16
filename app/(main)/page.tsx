@@ -1,6 +1,5 @@
 import { ButtonForHeader } from "@/components/ui/button";
 import Image from "next/image";
-import React from "react";
 
 const MainPage = () => {
     return (
@@ -32,6 +31,7 @@ const MainPage = () => {
                     />
                 </div>
             </div>
+            <div className="h-screen w-full bg-gray-900">hi</div>
         </section>
     );
 };

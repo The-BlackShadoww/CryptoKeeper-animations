@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const DropdownLinks = () => {
     return (
-        <nav className="absolute right-[5%] max-w-[720px] w-full h-auto text-[#ffffff] bg-[#ffffff]/[2%] border border-[#2a2a2a]/50 p-12 rounded-[18px] space-y-10 backdrop-blur-sm shadow-md">
+        <nav className="absolute right-[5%] max-w-[720px] w-full h-auto text-[#ffffff] bg-[#ffffff]/[2%] border border-[#2a2a2a]/50 p-12 rounded-[18px] space-y-10  shadow-md">
             <div>
                 <h6 className="mb-5">Main Pages</h6>
                 <div className="grid grid-cols-3 gap-[68px] text-[18px] text-[#eaeaea]/50">

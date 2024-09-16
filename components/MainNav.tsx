@@ -41,7 +41,7 @@ const MainNav = () => {
                     <ButtonForHeader title="Download App" />
                 </div>
             </header>
-            <DropdownLinks />
+            {/* <DropdownLinks /> */}
         </>
     );
 };
