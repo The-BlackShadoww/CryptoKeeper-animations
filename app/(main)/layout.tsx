@@ -9,17 +9,17 @@ const MainLayout = ({
 }: Readonly<{
     children: React.ReactNode;
 }>) => {
-    useEffect(() => {
-        const lenis = new Lenis();
+    // useEffect(() => {
+    //     const lenis = new Lenis();
 
-        const raf = (time: number): void => {
-            lenis.raf(time);
+    //     const raf = (time: number): void => {
+    //         lenis.raf(time);
 
-            requestAnimationFrame(raf);
-        };
+    //         requestAnimationFrame(raf);
+    //     };
 
-        requestAnimationFrame(raf);
-    }, []);
+    //     requestAnimationFrame(raf);
+    // }, []);
     return (
         <>
             {/* <main className="max-w-[1280px] mx-auto px-4 relative"> */}
