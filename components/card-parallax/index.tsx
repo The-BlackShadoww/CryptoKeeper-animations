@@ -9,9 +9,10 @@ const CardParallax = () => {
     const container = useRef(null);
 
     const { scrollYProgress } = useScroll({
-        target: container,
+      target: container,
 
-        offset: ["start start", "end end"],
+    //   offset: ["start start", "end end"],
+      offset: ["start center", "end center"],
     });
 
     return (
