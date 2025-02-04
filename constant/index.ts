@@ -17,4 +17,12 @@ export const pages = [
     title: "Auto-hiding sticky navigation",
     url: "http://localhost:3000/auto-hiding-sticky-navigation",
   },
+  {
+    title: "Scroll animation",
+    url: "http://localhost:3000/scrool-animation",
+  },
+  {
+    title: "Sticky scroll animation",
+    url: "http://localhost:3000/sticky-scroll-animation",
+  },
 ];
