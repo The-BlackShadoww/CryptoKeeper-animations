@@ -28,4 +28,8 @@ export const pages = [
         title: "Sticky scroll animation",
         url: "http://localhost:3000/sticky-scroll-animation",
     },
+    {
+        title: "Animated card swiper",
+        url: "http://localhost:3000/animated-card-swiper",
+    },
 ];
