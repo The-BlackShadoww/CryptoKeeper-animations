@@ -32,4 +32,8 @@ export const pages = [
         title: "Animated card swiper",
         url: "http://localhost:3000/animated-card-swiper",
     },
+    {
+        title: "Blur text reveal",
+        url: "http://localhost:3000/blur-text-reveal",
+    },
 ];
