@@ -69,38 +69,48 @@ export default function WhoWeAre() {
   }, []);
 
   return (
-    <>
-      <div className="h-[100vh] w-full"></div>
+      <>
+          <div className="h-[100vh] w-full"></div>
 
-      <div className="relative flex w-full h-screen bg-gray-100 p-8">
-        {/* Left Fixed Title */}
-        <div className="w-1/3 sticky top-1/4 h-fit">
-          <motion.h2
-            initial={{ opacity: 0, y: -20, color: "rgb(255, 150, 150)" }}
-            animate={{ opacity: 1, y: 0, color: "rgb(255, 0, 0)" }}
-            transition={{ duration: 1 }}
-            className="text-4xl font-bold"
-          >
-            Who we are & What we do
-          </motion.h2>
-        </div>
+          <div className="relative flex w-full h-screen bg-gray-100 p-8">
+              {/* Left Fixed Title */}
+              <div className="w-1/3 sticky top-1/4 h-fit">
+                  <motion.h2
+                      initial={{
+                          opacity: 0,
+                          y: -20,
+                          color: "rgb(255, 150, 150)",
+                      }}
+                      animate={{ opacity: 1, y: 0, color: "rgb(255, 0, 0)" }}
+                      transition={{ duration: 1 }}
+                      className="text-4xl font-bold"
+                  >
+                      Who we are & What we do
+                  </motion.h2>
+              </div>
 
-        {/* Right Scrolling Content */}
-        <div ref={containerRef} className="w-2/3 space-y-24 overflow-hidden">
-          {sections.map((section, i) => (
-            <motion.div
-              key={i}
-              ref={(el) => (sectionsRef.current[i] = el)}
-              className="opacity-30 transition-opacity duration-500 text-red-500"
-            >
-              <h3 className="text-3xl font-semibold">{section.title}</h3>
-              <p className="text-lg">{section.content}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-      <div className="h-[100vh] w-full"></div>
-    </>
+              {/* Right Scrolling Content */}
+              <div
+                  ref={containerRef}
+                  className="w-2/3 space-y-24 overflow-hidden"
+              >
+                  {sections.map((section, i) => (
+                      <motion.div
+                          key={i}
+                          // ref={(el) => (sectionsRef.current[i] = el)}
+                          ref={(el) => { sectionsRef.current[i] = el; }}
+                          className="opacity-30 transition-opacity duration-500 text-red-500"
+                      >
+                          <h3 className="text-3xl font-semibold">
+                              {section.title}
+                          </h3>
+                          <p className="text-lg">{section.content}</p>
+                      </motion.div>
+                  ))}
+              </div>
+          </div>
+          <div className="h-[100vh] w-full"></div>
+      </>
   );
 }
 

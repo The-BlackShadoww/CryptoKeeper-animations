@@ -24,7 +24,7 @@ const Double = ({ projects, reversed }: DoubleType) => {
     let currentXPercent: number = reversed ? 100 : 0;
     const speed: number = 0.15;
 
-    const manageMouseMove = (e: MouseEvent): void => {
+    const manageMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
         const { clientX } = e;
         xPercent = (clientX / window.innerWidth) * 100;
         if (!requestAnimationFrameId) {
